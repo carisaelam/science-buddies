@@ -1,0 +1,114 @@
+/* CSS Reset (Josh Comeau) */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* END CSS Reset */
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+header,
+footer,
+main {
+  padding: 0.5em;
+}
+
+/* Header */
+header {
+  background-color: rgba(255, 0, 0, 0.372);
+}
+
+/* Main */
+main {
+  background-color: rgba(0, 0, 255, 0.371);
+}
+
+.card__container {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.card {
+  background-color: aliceblue;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.436);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(128, 128, 128, 0.422);
+}

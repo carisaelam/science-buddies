@@ -1,1 +1,2 @@
-# science-buddies
+# Science Buddies Project
+
