@@ -89,11 +89,10 @@ header {
 
 /* Main */
 main {
-  background-color: rgba(0, 0, 255, 0.371);
+  background-color: rgba(190, 190, 233, 0.258);
 }
 
 .card__container {
-  background-color: yellow;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   gap: 1rem;
@@ -101,11 +100,20 @@ main {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: aliceblue;
   padding: 1rem;
   box-sizing: border-box;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.436);
+  gap: .5rem; 
+}
+
+.card img {
+  width: 5rem;
+  border-radius: 25%;
+  margin-bottom: 1rem;
 }
 
 /* Footer */
