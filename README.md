@@ -1,3 +1,3 @@
 # Science Buddies Project
 
-![Site Preview](science-buddies-preview.png)
+![Site Preview](site-preview.png)
