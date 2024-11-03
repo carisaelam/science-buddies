@@ -84,7 +84,32 @@ main {
 
 /* Header */
 header {
-  background-color: rgba(255, 0, 0, 0.372);
+}
+
+.header__text__container {
+  margin-bottom: 1rem;
+}
+
+.links__container {
+  display: flex;
+  gap: 1rem;
+  padding-inline-start: 0;
+  padding: 0.5rem;
+}
+
+.links__container li {
+  list-style: none;
+  padding: 0.25rem 0.5rem;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.links__container li:hover {
+  cursor: pointer;
+  background-color: rgb(56, 71, 185);
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 
 /* Main */
@@ -107,7 +132,7 @@ main {
   box-sizing: border-box;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.436);
-  gap: .5rem; 
+  gap: 0.5rem;
 }
 
 .card img {
@@ -119,4 +144,10 @@ main {
 /* Footer */
 footer {
   background-color: rgba(128, 128, 128, 0.422);
+}
+
+@media (max-width: 500px) {
+  .links__container {
+    display: none;
+  }
 }
